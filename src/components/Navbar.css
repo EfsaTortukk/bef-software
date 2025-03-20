@@ -1,0 +1,72 @@
+/* Navbar Genel Ayarlar */
+.navbar {
+  background-color: white;
+  padding: 15px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 70px;  /* Navbar yüksekliği */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Öğeleri eşit yay */
+}
+
+/* Navbar İçeriğini Düzenle */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  margin-right: 30px;
+}
+
+/* Navbar Linkleri */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Linkler arasındaki boşluğu artır */
+  margin: auto;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #008000;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #005700;
+}
+
+/* Dil Butonu */
+.lang-toggle {
+  background: #008000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: #005700;
+}
