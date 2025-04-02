@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 import "./Navbar.css";
 
 const Navbar = () => {
   const [language, setLanguage] = useState("TR");
+  const location = useLocation();
 
   const toggleLanguage = () => {
     setLanguage(language === "TR" ? "EN" : "TR");
@@ -19,11 +21,31 @@ const Navbar = () => {
 
         {/* Navbar Linkleri */}
         <ul className="nav-links">
-          <li><Link to="/">Ana Sayfa</Link></li>
-          <li><Link to="/about">Hakkımızda</Link></li>
-          <li><Link to="/services">Hizmetlerimiz</Link></li>
-          <li><Link to="/portfolio">Portfolyo</Link></li>
-          <li><Link to="/contact">İletişim</Link></li>
+          <li>
+            <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
+              Ana Sayfa
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className={location.pathname === "/about" ? "active-link" : ""}>
+              Hakkımızda
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" className={location.pathname === "/services" ? "active-link" : ""}>
+              Hizmetlerimiz
+            </Link>
+          </li>
+          <li>
+            <Link to="/portfolio" className={location.pathname === "/portfolio" ? "active-link" : ""}>
+              Portfolyo
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className={location.pathname === "/contact" ? "active-link" : ""}>
+              İletişim
+            </Link>
+          </li>
         </ul>
 
         {/* Dil Değiştirme Butonu */}

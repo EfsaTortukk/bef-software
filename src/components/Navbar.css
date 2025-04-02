@@ -1,7 +1,7 @@
 /* Navbar Genel Ayarlar */
 .navbar {
   background-color: white;
-  padding: 15px 0;
+  /*padding: 1px 0;*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -69,4 +69,11 @@
 
 .lang-toggle:hover {
   background: #005700;
+}
+/* Aktif Sayfa Bağlantısı */
+.nav-links a.active-link {
+  background-color: #17983b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9999px; /* Tam yuvarlak */
 }

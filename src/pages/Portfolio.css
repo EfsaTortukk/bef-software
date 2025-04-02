@@ -1,0 +1,40 @@
+.portfolio-container {
+    background: linear-gradient(to bottom right, #C1FF72, #C1FF72);
+    min-height: 750px;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+  }
+  
+  .portfolio-message {
+    background-color: #ffffff;
+    margin-top: 50px;
+    padding: 60px 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 128, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .portfolio-message h1 {
+    font-size: 48px;
+    color: #17983b;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-message p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .portfolio-message .follow {
+    font-weight: bold;
+    font-size: 22px;
+    color: #219F2E;
+  }
+  
