@@ -19,7 +19,7 @@ const Footer = () => {
 
       {/* Orta: Logo */}
       <div className="footer-center">
-        <img src="/logo.png" alt="bef logo" />
+        <img src="/logo-normal.svg" alt="bef logo" />
       </div>
 
       {/* Sağ: Sayfa Linkleri */}

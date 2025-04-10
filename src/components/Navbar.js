@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <Link to="/" className="logo">
-          <img src="/logo.png" alt="bef logo" />
+          <img src="/logo-normal.svg" alt="bef logo" />
         </Link>
 
         {/* Navbar Linkleri */}

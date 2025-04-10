@@ -26,7 +26,7 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero">
-        <img src="/logo-beyaz.png" alt="bef logo" className="hero-logo" />
+        <img src="/logo-beyaz.svg" alt="bef logo" className="hero-logo" />
         <div>
           <img src="/homepage-arrow.png" alt="arrow" className="scroll-down" />
         </div>
